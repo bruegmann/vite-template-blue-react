@@ -1,4 +1,4 @@
-import { Page, Header, HeaderTitle, Body } from "blue-react"
+import { Page, Header, HeaderTitle, Body, A } from "blue-react"
 
 import { appLogo, appTitle, getPhrase } from "../shared"
 
@@ -29,13 +29,12 @@ export default function HomePage() {
                         <code>./src/styles</code>.
                     </li>
                     <li>
-                        <a
+                        <A
                             href="https://bruegmann.github.io/blue-react/"
                             target="_blank"
-                            rel="noopener noreferrer"
                         >
                             Check out the docs
-                        </a>{" "}
+                        </A>{" "}
                         to find out more about the components, utilities and
                         classes. You'll also find many examples there.
                     </li>
