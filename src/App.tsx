@@ -1,39 +1,48 @@
-import { useState } from "react"
-import reactLogo from "./assets/react.svg"
-import viteLogo from "/vite.svg"
-import "./App.css"
+import { Layout, SidebarMenu, SidebarMenuItem } from "blue-react"
+import {
+    List,
+    House,
+    HouseFill,
+    XCircleFill,
+    InfoCircleFill,
+    CheckCircleFill,
+    ExclamationCircleFill
+} from "react-bootstrap-icons"
 
-function App() {
-    const [count, setCount] = useState(0)
+import HomePage from "./pages/HomePage"
 
+import "./styles/main.scss"
+
+export default function App() {
     return (
-        <>
-            <div>
-                <a href="https://vitejs.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img
-                        src={reactLogo}
-                        className="logo react"
-                        alt="React logo"
-                    />
-                </a>
-            </div>
-            <h1>Vite + React</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
-        </>
+        <Layout
+            expandSidebar
+            sidebarToggleIconComponent={<List />}
+            pages={[
+                {
+                    name: "home",
+                    component: <HomePage />
+                }
+            ]}
+            statusIcons={{
+                danger: <XCircleFill />,
+                info: <InfoCircleFill />,
+                success: <CheckCircleFill />,
+                warning: <ExclamationCircleFill />
+            }}
+        >
+            <SidebarMenu
+                sidebarClass="overflow-visible"
+                menuClass="overflow-visible"
+            >
+                <SidebarMenuItem
+                    href="#"
+                    icon={<House />}
+                    iconForActive={<HouseFill />}
+                    label="Home"
+                    isHome
+                />
+            </SidebarMenu>
+        </Layout>
     )
 }
-
-export default App

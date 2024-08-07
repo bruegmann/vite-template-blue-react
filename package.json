@@ -1,5 +1,5 @@
 {
-    "name": "vite-blue-react",
+    "name": "vite-template-blue-react",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -10,7 +10,9 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "blue-react": "^9.10.2",
         "react": "^18.3.1",
+        "react-bootstrap-icons": "^1.11.4",
         "react-dom": "^18.3.1"
     },
     "devDependencies": {
@@ -22,7 +24,7 @@
         "eslint": "^8.57.0",
         "eslint-plugin-react-hooks": "^4.6.2",
         "eslint-plugin-react-refresh": "^0.4.7",
-        "prettier": "^3.3.3",
+        "sass": "^1.77.8",
         "typescript": "^5.2.2",
         "vite": "^5.3.4"
     }
