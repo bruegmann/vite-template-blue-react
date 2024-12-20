@@ -1,16 +1,8 @@
-import { Page, Header, HeaderTitle, Body, A } from "blue-react"
-
-import { appLogo, appTitle, getPhrase } from "../shared"
+import { Page, Body, A } from "blue-react"
 
 export default function HomePage() {
     return (
         <Page>
-            <Header>
-                <HeaderTitle logo={appLogo} appTitle={appTitle}>
-                    {getPhrase("HELLO_WORLD")}
-                </HeaderTitle>
-            </Header>
-
             <Body containerClass="container">
                 <h1 className="page-header mt-4 mb-3">
                     Yay, your new app is ready! What now?
