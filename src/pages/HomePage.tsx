@@ -1,37 +1,50 @@
-import { Page, Body, A } from "blue-react"
+import "./HomePage.css"
 
 export default function HomePage() {
     return (
-        <Page>
-            <Body containerClass="container">
-                <h1 className="page-header mt-4 mb-3">
-                    Yay, your new app is ready! What now?
-                </h1>
+        <div className="home-grid">
+            <div>
+                <button type="button" className="btn blue-btn-soft-secondary">
+                    Click me
+                </button>
+            </div>
 
-                <ol>
-                    <li>
-                        Remove this placeholder content by editing{" "}
-                        <code>./src/pages/HomePage.tsx</code>.
-                    </li>
-                    <li>
-                        Register more pages in <code>./src/App.tsx</code>.
-                    </li>
-                    <li>
-                        Take a look at the stylesheets in{" "}
-                        <code>./src/styles</code>.
-                    </li>
-                    <li>
-                        <A
-                            href="https://bruegmann.github.io/blue-react/"
-                            target="_blank"
-                        >
-                            Check out the docs
-                        </A>{" "}
-                        to find out more about the components, utilities and
-                        classes. You'll also find many examples there.
-                    </li>
-                </ol>
-            </Body>
-        </Page>
+            <div className="list-group overflow-auto">
+                <div className="list-group-item">Item 1</div>
+                <div className="list-group-item">Item 2</div>
+                <div className="list-group-item">Item 3</div>
+                <div className="list-group-item">Item 4</div>
+                <div className="list-group-item">Item 5</div>
+                <div className="list-group-item">Item 6</div>
+                <div className="list-group-item">Item 7</div>
+                <div className="list-group-item">Item 8</div>
+                <div className="list-group-item">Item 9</div>
+                <div className="list-group-item">Item 10</div>
+                <div className="list-group-item">Item 11</div>
+                <div className="list-group-item">Item 12</div>
+                <div className="list-group-item">Item 13</div>
+                <div className="list-group-item">Item 14</div>
+                <div className="list-group-item">Item 15</div>
+                <div className="list-group-item">Item 16</div>
+                <div className="list-group-item">Item 17</div>
+                <div className="list-group-item">Item 18</div>
+                <div className="list-group-item">Item 19</div>
+                <div className="list-group-item">Item 20</div>
+                <div className="list-group-item">Item 21</div>
+                <div className="list-group-item">Item 22</div>
+                <div className="list-group-item">Item 23</div>
+                <div className="list-group-item">Item 24</div>
+                <div className="list-group-item">Item 25</div>
+                <div className="list-group-item">Item 26</div>
+                <div className="list-group-item">Item 27</div>
+                <div className="list-group-item">Item 28</div>
+                <div className="list-group-item">Item 29</div>
+                <div className="list-group-item">Item 30</div>
+            </div>
+
+            <div>Column 2</div>
+
+            <div>Column 3</div>
+        </div>
     )
 }
