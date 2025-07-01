@@ -1,4 +1,4 @@
-import { Layout, Header, HeaderTitle, MenuItem, SidebarMenu } from "blue-react"
+import { Layout, HeaderTitle, MenuItem, SidebarMenu } from "blue-react"
 import { House, HouseFill } from "react-bootstrap-icons"
 
 import HomePage from "./pages/HomePage"
@@ -11,11 +11,7 @@ const appTitle = "My App Title"
 export default function App() {
     return (
         <Layout
-            header={
-                <Header>
-                    <HeaderTitle logo={appLogo} appTitle={appTitle} />
-                </Header>
-            }
+            header={<HeaderTitle logo={appLogo} appTitle={appTitle} />}
             side={
                 <SidebarMenu>
                     <MenuItem
