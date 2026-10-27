@@ -1,29 +1,27 @@
-import { Layout, HeaderTitle, MenuItem, SidebarMenu } from "blue-react"
-import { House, HouseFill } from "react-bootstrap-icons"
+import { Layout, HeaderTitle, MenuItem, SidebarMenu } from "blue-react";
+import { House, HouseFill } from "react-bootstrap-icons";
 
-import HomePage from "./pages/HomePage"
+import HomePage from "./pages/HomePage";
 
-import "./styles/main.scss"
-
-const appLogo = "/vite.svg"
-const appTitle = "My App Title"
+const appLogo = "/favicon.svg";
+const appTitle = "My App Title";
 
 export default function App() {
-    return (
-        <Layout
-            header={<HeaderTitle logo={appLogo} appTitle={appTitle} />}
-            side={
-                <SidebarMenu>
-                    <MenuItem
-                        href="."
-                        icon={<House />}
-                        iconForCurrent={<HouseFill />}
-                        label="Home"
-                        current
-                    />
-                </SidebarMenu>
-            }
-            page={<HomePage />}
-        />
-    )
+  return (
+    <Layout
+      header={<HeaderTitle logo={appLogo} appTitle={appTitle} />}
+      side={
+        <SidebarMenu>
+          <MenuItem
+            href="."
+            icon={<House />}
+            iconForCurrent={<HouseFill />}
+            label="Home"
+            current
+          />
+        </SidebarMenu>
+      }
+      page={<HomePage />}
+    />
+  );
 }
