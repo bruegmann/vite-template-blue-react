@@ -15,16 +15,15 @@ export default function App() {
             side={
                 <SidebarMenu>
                     <MenuItem
-                        href="#"
+                        href="."
                         icon={<House />}
-                        iconForActive={<HouseFill />}
+                        iconForCurrent={<HouseFill />}
                         label="Home"
-                        isHome
+                        current
                     />
                 </SidebarMenu>
             }
-        >
-            <HomePage />
-        </Layout>
+            page={<HomePage />}
+        />
     )
 }

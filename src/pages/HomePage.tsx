@@ -1,5 +1,3 @@
-import { A } from "blue-react"
-
 export default function HomePage() {
     return (
         <div className="container">
@@ -9,22 +7,33 @@ export default function HomePage() {
 
             <ol>
                 <li>
+                    Install Inter font family and embed it in{" "}
+                    <code>index.html</code>.{" "}
+                    <a href="https://bruegmann.github.io/blue/typography/">
+                        More information.
+                    </a>
+                </li>
+                <li>
                     Remove this placeholder content by editing{" "}
                     <code>./src/pages/HomePage.tsx</code>.
                 </li>
                 <li>
-                    Register more pages in <code>./src/App.tsx</code>.
+                    Check out the entry point in <code>./src/App.tsx</code>. If
+                    you need your app to have multiple pages, you should use
+                    something like{" "}
+                    <a href="https://reactrouter.com/">React Router</a> or{" "}
+                    <a href="https://tanstack.com/router/latest">
+                        TanStack Router
+                    </a>
+                    .
                 </li>
                 <li>
                     Take a look at the stylesheets in <code>./src/styles</code>.
                 </li>
                 <li>
-                    <A
-                        href="https://bruegmann.github.io/blue-react/"
-                        target="_blank"
-                    >
+                    <a href="https://bruegmann.github.io/blue/react/">
                         Check out the docs
-                    </A>{" "}
+                    </a>{" "}
                     to find out more about the components, utilities and
                     classes. You'll also find many examples there.
                 </li>
